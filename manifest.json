@@ -1,0 +1,20 @@
+{
+  "name": "chrome.sidebar Example",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Test for chrome.sidebar API",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "icon.png"
+    }
+  },
+  "sidebar": {
+    "default_title": "test sidebar",
+    "default_page": "test.html",
+    "default_icon": "icon.png"           // We need to remove this and use the browser_action icon
+  },
+  "permissions": ["tabs", "sidebar"]
+}
